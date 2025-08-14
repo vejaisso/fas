@@ -16,7 +16,7 @@
         header {
             background-color: #007BFF;
             color: #fff;
-            padding: 25px 20px;
+            padding: 30px 20px;
             text-align: center;
         }
 
@@ -29,45 +29,48 @@
             max-width: 900px;
             margin: 30px auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
         h2 {
             color: #007BFF;
-            margin-top: 0;
+            margin-bottom: 10px;
         }
 
         p {
             line-height: 1.6;
             font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .aula-block {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .aula-block h3 {
+            margin-top: 0;
+            color: #28a745;
         }
 
         .btn-container {
-            margin-top: 20px;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             gap: 15px;
+            margin-top: 15px;
         }
 
         .btn {
-            display: inline-block;
+            flex: 1 1 200px;
             text-decoration: none;
             color: #fff;
             text-align: center;
-            padding: 15px 25px;
+            padding: 12px 20px;
             border-radius: 8px;
             font-size: 1em;
             transition: 0.3s;
-        }
-
-        .btn-form {
-            background-color: #007BFF;
-        }
-
-        .btn-form:hover {
-            background-color: #0056b3;
         }
 
         .btn-pdf {
@@ -78,37 +81,55 @@
             background-color: #1e7e34;
         }
 
+        .btn-form {
+            background-color: #007BFF;
+        }
+
+        .btn-form:hover {
+            background-color: #0056b3;
+        }
+
         footer {
             text-align: center;
-            padding: 15px 0;
+            padding: 20px 0;
             margin-top: 30px;
             color: #555;
             font-size: 0.9em;
-        }
-
-        @media (min-width: 600px) {
-            .btn-container {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Sistemas de Informação</h1>
+        <h1>Sistemas de Informação - Material Didático</h1>
     </header>
 
     <main>
-        <h2>Material Didático - Aula 02</h2>
-        <p>Confira os PDFs disponíveis para estudo e utilize o formulário relacionado à Aula 02 para enviar suas respostas.</p>
+        <!-- Aula 00 -->
+        <div class="aula-block">
+            <h3>Aula 00 - Apresentação PPC</h3>
+            <div class="btn-container">
+                <a href="docs/Aula00_FAS_ApresentacaoPPC.pdf" class="btn btn-pdf" download>Download PDF</a>
+            </div>
+        </div>
 
-        <div class="btn-container">
-            <a href="docs/Aula00_FAS_ApresentacaoPPC.pdf" class="btn btn-pdf" download>Aula 00 - Apresentação PPC</a>
-            <a href="docs/Aula01_FAS_ConceitosBasicosSistemas.pdf" class="btn btn-pdf" download>Aula 01 - Conceitos Básicos de Sistemas</a>
-            <a href="docs/Aula02_FAS_SistemasInformacao_OrganizacaoEmpresa.pdf" class="btn btn-pdf" download>Aula 02 - Sistemas de Informação e Organização da Empresa</a>
-            <button class="btn btn-form" onclick="window.open('https://forms.gle/gQYfMQt8qrHz3ufWA','_blank')">Formulário Aula 02</button>
+        <!-- Aula 01 -->
+        <div class="aula-block">
+            <h3>Aula 01 - Conceitos Básicos de Sistemas</h3>
+            <p>Estude os elementos básicos de sistemas, sistemas físicos e abstratos, definição de sistemas de informação e tipos de software.</p>
+            <div class="btn-container">
+                <a href="docs/Aula01_FAS_ConceitosBasicosSistemas.pdf" class="btn btn-pdf" download>Download PDF</a>
+                <button class="btn btn-form" onclick="window.open('https://forms.gle/Tm9d42c1D5aLFydQA','_blank')">Formulário Aula 01</button>
+            </div>
+        </div>
+
+        <!-- Aula 02 -->
+        <div class="aula-block">
+            <h3>Aula 02 - Sistemas de Informação e Organização da Empresa</h3>
+            <p>Estude os conceitos de sistemas de informação, organização empresarial e aplicação prática em empresas.</p>
+            <div class="btn-container">
+                <a href="docs/Aula02_FAS_SistemasInformacao_OrganizacaoEmpresa.pdf" class="btn btn-pdf" download>Download PDF</a>
+                <button class="btn btn-form" onclick="window.open('https://forms.gle/gQYfMQt8qrHz3ufWA','_blank')">Formulário Aula 02</button>
+            </div>
         </div>
     </main>
 
