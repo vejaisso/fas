@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Informação - Material Didático</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #007BFF;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: 0.3s;
+        }
+
+        .btn-form {
+            background-color: #007BFF;
+        }
+
+        .btn-form:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-pdf {
+            background-color: #28a745;
+        }
+
+        .btn-pdf:hover {
+            background-color: #1e7e34;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        @media (min-width: 600px) {
+            .btn-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sistemas de Informação</h1>
+    </header>
+
+    <main>
+        <h2>Material Didático - Aula 02</h2>
+        <p>Confira os PDFs disponíveis para estudo e utilize o formulário relacionado à Aula 02 para enviar suas respostas.</p>
+
+        <div class="btn-container">
+            <a href="docs/Aula00_FAS_ApresentacaoPPC.pdf" class="btn btn-pdf" download>Aula 00 - Apresentação PPC</a>
+            <a href="docs/Aula01_FAS_ConceitosBasicosSistemas.pdf" class="btn btn-pdf" download>Aula 01 - Conceitos Básicos de Sistemas</a>
+            <a href="docs/Aula02_FAS_SistemasInformacao_OrganizacaoEmpresa.pdf" class="btn btn-pdf" download>Aula 02 - Sistemas de Informação e Organização da Empresa</a>
+            <button class="btn btn-form" onclick="window.open('https://forms.gle/gQYfMQt8qrHz3ufWA','_blank')">Formulário Aula 02</button>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 - Material Didático de Sistemas de Informação
+    </footer>
+</body>
+</html>
